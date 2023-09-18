@@ -319,20 +319,7 @@ Double exponentToDouble(double x,double power)throws Exception{
  * @throws Exception 
  */
 
-Double doubleTest(double result)throws Exception{
- 
-    if(result == Double.POSITIVE_INFINITY ) {
-        throw new ArithmeticException("Double overflow resulting in POSITIVE_INFINITY");
-    } else if(result == Double.NEGATIVE_INFINITY) {
-        throw new ArithmeticException("Double overflow resulting in NEGATIVE_INFINITY");
-    } else if(Double.compare(-0.0f, result) == 0) {
-        throw new ArithmeticException("Double overflow resulting in negative zero");
-    } else if(Double.compare(+0.0f, result) == 0) {
-        throw new ArithmeticException("Double overflow resulting in positive zero");
-    }
 
-    return result;
-}
 }
 
 
